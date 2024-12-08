@@ -60,9 +60,9 @@ gsap.from("#about img,#about_text", {
   },
 });
 gsap.from(".card", {
- scale:0.8,
+  scale: 0.8,
   opacity: 0,
-  duration:0.5,
+  duration: 0.5,
   stagger: 0.1,
   scrollTrigger: {
     trigger: "#cardCont",
@@ -72,25 +72,35 @@ gsap.from(".card", {
     scrub: 1,
   },
 });
-gsap.from("#colon1",{
-  y:-70,
-  x:-70,
-  scrollTrigger:{
-    trigger:"#colon1",
-    scroller:"body",
-    start:"top 55%",
-    end:"top 45%",
-    scrub:2,
-  }
-})
-gsap.from("#colon2",{
-  y:70,
-  x:70,
-  scrollTrigger:{
-    trigger:"#colon1",
-    scroller:"body",
-    start:"top 55%",
-    end:"top 45%",
-    scrub:2,
-  }
-})
+gsap.from("#colon1", {
+  y: -70,
+  x: -70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+gsap.from("#colon2", {
+  y: 70,
+  x: 70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 2,
+  },
+});
+gsap.from("#page4 h1", {
+  y: 50,
+  scrollTrigger: {
+    trigger: "#page4 h1",
+    scroller: "body",
+    start: "top 75%",
+    end: "top 70%",
+    scrub: 1,
+  },
+});
